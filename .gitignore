@@ -8,3 +8,7 @@
 *.tmp
 *.bak
 .directory
+output
+surefire-reports
+target
+*-ide-plugin.xml
