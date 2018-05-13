@@ -3,7 +3,7 @@ package main;
 import java.util.Vector;
 import java.util.Enumeration;
 
-class Customer {
+public class Customer {
     private String name;
     private Vector<Rental> rentals = new Vector<Rental>();
     public Customer(String newname) {
