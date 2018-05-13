@@ -1,24 +1,23 @@
-package de.chris;
+package main;
 
-import org.junit.jupiter.api.Test;
+import org.junit.Test;
+import static org.junit.Assert.*;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-
-class MovieTest {
+public class MovieTest {
     private final Movie movie = new Movie("Jurassic Park", Movie.REGULAR);
 
     @Test
-    void getPriceCodeTest() {
+    public void getPriceCodeTest() {
         assertEquals(movie.getPriceCode(), Movie.REGULAR);
     }
 
     @Test
-    void getTitleTest() {
+    public void getTitleTest() {
         assertEquals(movie.getTitle(), "Jurassic Park");
     }
 
     @Test
-    void setPriceCodeTest() {
+    public void setPriceCodeTest() {
         movie.setPriceCode(Movie.NEW_RELEASE);
         assertEquals(movie.getPriceCode(), Movie.NEW_RELEASE);
     }
